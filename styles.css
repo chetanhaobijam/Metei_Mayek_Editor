@@ -25,11 +25,25 @@ body, html {
   background-repeat: no-repeat;
 }
 
+*.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+}
+
 h1 {
   text-align: center;
   margin: 1rem;
   font-size: 2.5rem;
   color: #3f37c9;
+  text-shadow: 5px 8px 4px rgb(0 0 0 / 30%);
 }
 
 p {
@@ -73,7 +87,7 @@ p {
   flex-direction: column;
   border-radius: 10px;
   gap: 0.4em;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .row {
