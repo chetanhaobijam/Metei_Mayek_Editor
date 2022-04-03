@@ -1,0 +1,56 @@
+/* Webfont: LeikoiMayekHU */@font-face {
+  font-family: 'LeikoiMayekHU';
+  src: url('./fonts/LeikoiMayekHU.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/LeikoiMayekHU.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/LeikoiMayekHU.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/LeikoiMayekHU.woff2') format('woff2'), /* Modern Browsers */
+       url('./fonts/LeikoiMayekHU.ttf') format('truetype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Oswald';
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+  font-size: 2.5rem;
+  color: #3f37c9;
+}
+
+p {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 1rem 0 1.5rem;
+}
+
+div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.meitei {
+  font-family: 'LeikoiMayekHU';
+}
+
+#qube {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #555;
+  box-shadow: 0 0 4px 5px rgb(0 0 0 / 20%);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}

@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Meitei Mayek Editor</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Meitei Mayek Editor</h1>
+        <p class="meitei">ꯃꯩꯇꯩ ꯃꯌꯦꯛ ꯏꯗꯤꯇꯔ</p>
+
+        <div>
+            <form name="Eyek">
+                <textarea  class="meitei" id="qube" onkeyup="transcrire()" name="eeyekeditor" rows="8"></textarea> 
+            </form>
+        </div>
+       
+        <script type="text/javascript">
+
+            function transcrire() {
+                qten = document.Eyek.eeyekeditor.value;
+         
+                qten = qten.replace(/b/g, "ꯕ");
+                qten = qten.replace(/B/g, "ꯕ");
+                qten = qten.replace(/c/g, "ꯆ");
+                qten = qten.replace(/C/g, "ꯆ");
+                qten = qten.replace(/k/g, "ꯀ");
+                qten = qten.replace(/g/g, "ꯒ");
+                qten = qten.replace(/b/g, "ꯕ");
+                qten = qten.replace(/n/g, "ꯅ");
+                qten = qten.replace(/m/g, "ꯃ");
+                qten = qten.replace(/s/g, "ꯁ");
+                qten = qten.replace(/d/g, "ꯗ");
+                qten = qten.replace(/D/g, "ꯘ");
+        
+                qten = qten.replace(/f/g, "ꯐ");
+                qten = qten.replace(/h/g, "ꯍ");
+                qten = qten.replace(/H/g, "ꯍ");
+                qten = qten.replace(/j/g, "ꯖ");
+                qten = qten.replace(/J/g, "ꯘ");
+                qten = qten.replace(/l/g, "ꯂ");
+                qten = qten.replace(/w/g, "ꯋ");
+                qten = qten.replace(/r/g, "ꯔ");
+                qten = qten.replace(/t/g, "ꯇ");
+                qten = qten.replace(/y/g, "ꯌ");
+                qten = qten.replace(/p/g, "ꯄ");
+                qten = qten.replace(/v/g, "ꯚ");
+                qten = qten.replace(/V/g, "ꯚ");
+                qten = qten.replace(/x/g, "ꯊ");
+        
+                //final consonent
+        
+                qten = qten.replace(/K/g, "ꯛ");
+                qten = qten.replace(/L/g, "ꯜ");
+                qten = qten.replace(/z/g, "ꯉ");
+                qten = qten.replace(/Z/g, "ꯡ");
+                qten = qten.replace(/N/g, "ꯟ");
+                qten = qten.replace(/M/g, "ꯝ");
+                qten = qten.replace(/Q/g, "ꯈ");
+        
+        
+        
+                qten = qten.replace(/U/g, "ꯎ");
+                qten = qten.replace(/I/g, "ꯏ");
+                qten = qten.replace(/A/g, "ꯑ");
+                qten = qten.replace(/T/g, "ꯠ");
+                qten = qten.replace(/P/g, "ꯞ");
+        
+         
+                //Dependent vowel
+                qten = qten.replace(/a/g, "ꯥ");
+                qten = qten.replace(/e/g, "ꯦ");
+                qten = qten.replace(/E/g, "ꯩ");
+                qten = qten.replace(/u/g, "ꯨ");
+                qten = qten.replace(/i/g, "ꯤ");
+                qten = qten.replace(/o/g, "ꯣ");
+                qten = qten.replace(/O/g, "ꯩ");
+                qten = qten.replace(/q/g, "ꯪ");
+        
+        
+        
+                //// ponctuation Eeyek
+        
+                qten = qten.replace(/\_/g, "꯭");
+                qten = qten.replace(/\|/g, "꯫");
+                qten = qten.replace(/\।।/g, "꯫");
+        
+                //digit
+                qten = qten.replace(/0/g, "꯰");
+                qten = qten.replace(/1/g, "꯱");
+                qten = qten.replace(/2/g, "꯲");
+                qten = qten.replace(/3/g, "꯳");
+                qten = qten.replace(/4/g, "꯴");
+                qten = qten.replace(/5/g, "꯵");
+                qten = qten.replace(/6/g, "꯶");
+                qten = qten.replace(/7/g, "꯷");
+                qten = qten.replace(/8/g, "꯸");
+                qten = qten.replace(/9/g, "꯹");
+        
+        
+                startPos = document.Eyek.eeyekeditor.selectionStart;
+                endPos = document.Eyek.eeyekeditor.selectionEnd;
+        
+                beforeLen = document.Eyek.eeyekeditor.value.length;
+                afterLen = qten.length;
+                adjustment = afterLen - beforeLen;
+        
+                document.Eyek.eeyekeditor.value = qten;
+        
+                document.Eyek.eeyekeditor.selectionStart = startPos + adjustment;
+                document.Eyek.eeyekeditor.selectionEnd = endPos + adjustment;
+        
+                var obj = document.Eyek.eeyekeditor;
+                obj.focus();
+                obj.scrollTop = obj.scrollHeight;
+            }
+        
+            function alpha(item) {
+                var input = document.Eyek.eeyekeditor;
+                if (document.selection) {
+                    input.focus();
+                    range = document.selection.createRange();
+                    range.text = item;
+                    range.select();
+                }
+                else if (input.selectionStart || input.selectionStart === '0') {
+                    var startPos = input.selectionStart;
+                    var endPos = input.selectionEnd;
+                    var cursorPos = startPos;
+                    var scrollTop = input.scrollTop;
+                    var baselength = 0;
+                    input.value = input.value.substring(0, startPos)
+                        + item
+                        + input.value.substring(endPos, input.value.length);
+                    cursorPos += item.length;
+                    input.focus();
+                    input.selectionStart = cursorPos;
+                    input.selectionEnd = cursorPos;
+                    input.scrollTop = scrollTop;
+                }
+                else {
+                    input.value += item;
+                    input.focus();
+                }
+            }
+        </script>
+    </body>
+</html>
