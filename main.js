@@ -3,6 +3,7 @@ const qube = document.querySelector("#qube");
 const tip = document.querySelector(".tip");
 const lowerCaseLetters = document.querySelectorAll(".lowerCase");
 const upperCaseLetters = document.querySelectorAll(".upperCase");
+// New Keys
 const one = document.querySelector("#one");
 const two = document.querySelector("#two");
 const three = document.querySelector("#three");
@@ -78,6 +79,80 @@ const M = document.querySelector("#M");
 const langle = document.querySelector("#langle");
 const rangle = document.querySelector("#rangle");
 const question = document.querySelector("#question");
+// Old Keys
+const oldOne = document.querySelector("#old-one");
+const oldTwo = document.querySelector("#old-two");
+const oldThree = document.querySelector("#old-three");
+const oldFour = document.querySelector("#old-four");
+const oldFive = document.querySelector("#old-five");
+const oldSix = document.querySelector("#old-six");
+const oldSeven = document.querySelector("#old-seven");
+const oldEight = document.querySelector("#old-eight");
+const oldNine = document.querySelector("#old-nine");
+const oldZero = document.querySelector("#old-zero");
+const oldHyphen = document.querySelector("#old-hyphen");
+const oldExclam = document.querySelector("#old-exclam");
+const oldAtTheRate = document.querySelector("#old-at-the-rate");
+const oldHash = document.querySelector("#old-hash");
+const oldDollar = document.querySelector("#old-dollar");
+const oldPercentage = document.querySelector("#old-percentage");
+const oldUpSign = document.querySelector("#old-up-sign");
+const oldAnd = document.querySelector("#old-and");
+const oldStar = document.querySelector("#old-star");
+const oldLbracket = document.querySelector("#old-lbracket");
+const oldRbracket = document.querySelector("#old-rbracket");
+const oldUnderscore = document.querySelector("#old-underscore");
+const  oldq= document.querySelector("#old-q");
+const  oldw= document.querySelector("#old-w");
+const  olde= document.querySelector("#old-e");
+const  oldr= document.querySelector("#old-r");
+const  oldt= document.querySelector("#old-t");
+const  oldy= document.querySelector("#old-y");
+const  oldu= document.querySelector("#old-u");
+const  oldi= document.querySelector("#old-i");
+const  oldo= document.querySelector("#old-o");
+const  oldp= document.querySelector("#old-p");
+const  oldBslash= document.querySelector("#old-bslash");
+const  oldQ= document.querySelector("#old-Q");
+const  oldW= document.querySelector("#old-W");
+const  oldE= document.querySelector("#old-E");
+const  oldR= document.querySelector("#old-R");
+const  oldT= document.querySelector("#old-T");
+const  oldY= document.querySelector("#old-Y");
+const  oldU= document.querySelector("#old-U");
+const  oldI= document.querySelector("#old-I");
+const  oldO= document.querySelector("#old-O");
+const  oldP= document.querySelector("#old-P");
+const  oldPipe= document.querySelector("#old-pipe");
+const olda = document.querySelector("#old-a");
+const olds = document.querySelector("#old-s");
+const oldd = document.querySelector("#old-d");
+const oldf = document.querySelector("#old-f");
+const oldg = document.querySelector("#old-g");
+const oldh = document.querySelector("#old-h");
+const oldj = document.querySelector("#old-j");
+const oldk = document.querySelector("#old-k");
+const oldl = document.querySelector("#old-l");
+const oldA = document.querySelector("#old-A");
+const oldS = document.querySelector("#old-S");
+const oldD = document.querySelector("#old-D");
+const oldF = document.querySelector("#old-F");
+const oldG = document.querySelector("#old-G");
+const oldH = document.querySelector("#old-H");
+const oldJ = document.querySelector("#old-J");
+const oldz = document.querySelector("#old-z");
+const oldx = document.querySelector("#old-x");
+const oldc = document.querySelector("#old-c");
+const oldv = document.querySelector("#old-v");
+const oldb = document.querySelector("#old-b");
+const oldn = document.querySelector("#old-n");
+const oldm = document.querySelector("#old-m");
+const oldComma = document.querySelector("#old-comma");
+const oldFullStop = document.querySelector("#old-full-stop");
+const oldSlash = document.querySelector("#old-slash");
+const oldLangle = document.querySelector("#old-langle");
+const oldRangle = document.querySelector("#old-rangle");
+const oldQuestion = document.querySelector("#old-question");
 
 // Letters Object
 const letters = {
@@ -171,6 +246,7 @@ window.addEventListener("keydown", (e) => {
 // Function to change to lower case letters
 const lowerCase = () => {
   // 1st row
+  // New Keyboard
   one.innerText = letters.one;
   two.innerText = letters.two;
   three.innerText = letters.three
@@ -194,7 +270,32 @@ const lowerCase = () => {
   rbracket.innerText = letters.rbracket;
   underscore.innerText = letters.underscore;
 
+  // Old Keyboard
+  oldOne.innerText = letters.one;
+  oldTwo.innerText = letters.two;
+  oldThree.innerText = letters.three
+  oldFour.innerText = letters.four;
+  oldFive.innerText = letters.five;
+  oldSix.innerText = letters.six;
+  oldSeven.innerText = letters.seven;
+  oldEight.innerText = letters.eight;
+  oldNine.innerText = letters.nine;
+  oldZero.innerText = letters.zero;
+  oldHyphen.innerText = letters.hyphen;
+  oldExclam.innerText = letters.exclam;
+  oldAtTheRate.innerText = letters.atTheRate;
+  oldHash.innerText = letters.hash;
+  oldDollar.innerText = letters.dollar;
+  oldPercentage.innerText = letters.percentage;
+  oldUpSign.innerText = letters.upSign;
+  oldAnd.innerText = letters.and;
+  oldStar.innerText = letters.star;
+  oldLbracket.innerText = letters.lbracket;
+  oldRbracket.innerText = letters.rbracket;
+  oldUnderscore.innerText = letters.underscore;
+
   // 2nd Row
+  // New Keyboard
   q.innerText = letters.q;
   w.innerText = letters.w;
   e.innerText = letters.e;
@@ -214,8 +315,33 @@ const lowerCase = () => {
   O.innerText = letters.O;
   P.innerText = letters.P;
   pipe.innerText = letters.pipe;
+
+  // Old Keyboard
+  oldq.innerText = letters.k;
+  oldw.innerText = letters.s;
+  olde.innerText = letters.l;
+  oldr.innerText = letters.m;
+  oldt.innerText = letters.p;
+  oldy.innerText = letters.n;
+  oldu.innerText = letters.c;
+  oldi.innerText = letters.t;
+  oldo.innerText = letters.Q;
+  oldp.innerText = letters.z;
+  oldBslash.innerText = letters.bslash;
+  oldQ.innerText = letters.v;
+  oldW.innerText = letters.K;
+  oldE.innerText = letters.L;
+  oldR.innerText = letters.M;
+  oldT.innerText = letters.P;
+  oldY.innerText = letters.N;
+  oldU.innerText = letters.T;
+  oldI.innerText = letters.Z;
+  oldO.innerText = letters.I;
+  oldP.innerText = letters.a;
+  oldPipe.innerText = letters.pipe;
   
   // 3rd Row
+  // New Keyboard
   a.innerText = letters.a;
   s.innerText = letters.s;
   d.innerText = letters.d;
@@ -232,7 +358,26 @@ const lowerCase = () => {
   K.innerText = letters.K;
   L.innerText = letters.L;
 
+  // Old Keyboard
+  olda.innerText = letters.x;
+  olds.innerText = letters.w;
+  oldd.innerText = letters.y;
+  oldf.innerText = letters.h;
+  oldg.innerText = letters.U;
+  oldh.innerText = letters.I;
+  oldj.innerText = letters.f;
+  oldk.innerText = letters.A;
+  oldl.innerText = letters.g;
+  oldA.innerText = letters.i;
+  oldS.innerText = letters.u;
+  oldD.innerText = letters.e;
+  oldF.innerText = letters.E;
+  oldG.innerText = letters.o;
+  oldH.innerText = letters.O;
+  oldJ.innerText = letters.q;
+
   // 4th Row
+  // New Keyboard
   z.innerText = letters.z;
   x.innerText = letters.x;
   c.innerText = letters.c;
@@ -249,53 +394,21 @@ const lowerCase = () => {
   langle.innerText = letters.langle;
   rangle.innerText = letters.rangle;
   question.innerText = letters.question;
-}
 
-// Function to change to upper case letters
-const upperCase = () => {
-  one.innerText = "!";
-  two.innerText = "@";
-  three.innerText = "#";
-  four.innerText = "$";
-  five.innerText = "%";
-  six.innerText = "^";
-  seven.innerText = "&";
-  eight.innerText = "*";
-  nine.innerText = "(";
-  zero.innerText = ")";
-  hyphen.innerText = "_";
-  q.innerText = "ꯈ";
-  w.innerText = "";
-  e.innerText = "ꯩ";
-  r.innerText = "";
-  t.innerText = "ꯠ";
-  y.innerText = "";
-  u.innerText = "ꯎ";
-  i.innerText = "ꯏ";
-  o.innerText = "ꯧ";
-  p.innerText = "ꯞ";
-  bslash.innerText = "꯫";
-  // 3rd Row
-  a.innerText = "ꯑ";
-  s.innerText = "";
-  d.innerText = "ꯙ";
-  f.innerText = "";
-  g.innerText = "ꯘ";
-  h.innerText = "";
-  j.innerText = "ꯓ";
-  k.innerText = "ꯛ";
-  l.innerText = "ꯜ";
-  // 4th Row
-  z.innerText = "ꯡ";
-  x.innerText = "";
-  c.innerText = "";
-  v.innerText = "";
-  b.innerText = "";
-  n.innerText = "ꯟ";
-  m.innerText = "ꯝ";
-  comma.innerText = "<";
-  fullStop.innerText = ">";
-  question.innerText = "?";
+  // Old Keyboard
+  oldz.innerText = letters.J;
+  oldx.innerText = letters.r;
+  oldc.innerText = letters.b;
+  oldv.innerText = letters.j;
+  oldb.innerText = letters.d;
+  oldn.innerText = letters.G;
+  oldm.innerText = letters.d;
+  oldComma.innerText = letters.comma;
+  oldFullStop.innerText = letters.fullStop;
+  oldSlash.innerText = letters.slash;
+  oldLangle.innerText = letters.langle;
+  oldRangle.innerText = letters.rangle;
+  oldQuestion.innerText = letters.question;
 }
 
 lowerCase();
