@@ -66,6 +66,7 @@ p {
 .eyek {
   width: calc(100% - 40px);
   margin: 3rem auto 1rem;
+  max-width: 1200px;
 }
 
 .meitei {
@@ -91,6 +92,8 @@ p {
   transform: translateY(0);
   transition: transform ease 2s;
   z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .bottom-animation {
@@ -112,6 +115,7 @@ p {
 .row {
   display: flex;
   gap: 0.4em;
+  justify-content: space-around;
 }
 
 .second-row {
@@ -223,6 +227,10 @@ p {
   .fifth-row img {
     width: 20%;
   }
+}
+
+@media (min-width: 1200px) {
+  
 }
 
 /* JS Classes */
