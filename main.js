@@ -166,13 +166,11 @@ const letters = {
 // Function to toggle the display of Keyboard using F2 and F4
 window.addEventListener("keydown", (e) => {
   if(e.key === "F2") {
-    keyboard.classList.add("hide");
-    qube.rows = "10";
-    tip.classList.remove("hide");
+    keyboard.classList.add("bottom-animation");
+    qube.style.height = "15em";
   } else if(e.key === "F4") {
-    keyboard.classList.remove("hide");
-    qube.rows = "6";
-    tip.classList.add("hide");
+    keyboard.classList.remove("bottom-animation");
+    qube.style.height = "5em";
   }
 })
 

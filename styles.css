@@ -82,15 +82,19 @@ p {
   border: none;
   border-radius: 5px;
   outline: none;
-}
-
-.tip {
-  font-size: 1rem;
-  margin: 3rem;
+  transition: all ease 1s;
 }
 
 .keyboard {
   display: flex;
+  position: relative;
+  transform: translateY(0);
+  transition: transform ease 2s;
+  z-index: 2;
+}
+
+.bottom-animation {
+  transform: translateY(200px);
 }
 
 .new-keyboard{
@@ -124,6 +128,8 @@ p {
 
 .fifth-row {
   margin: 0 0.8rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .row div {
@@ -147,20 +153,76 @@ p {
   height: auto;
 }
 
+#shift, #enter {
+  flex-grow: 1;
+}
+
+#backspace, #spacebar {
+  flex-grow: 2
+}
+
 .row div:active {
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
+.tip {
+  display: none;
+}
+
+.tip p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+@media (min-width: 375px) {
+  .fifth-row img {
+      width: 60%;
+    }
+  }
+
 @media (min-width: 567px) {
+  body {
+    overflow-y: hidden;
+  }
   h1 {
     font-size: 2.5rem;
   }
+
+  .eyek {
+    margin: 1rem auto;
+  }
+
   p {
     font-size: 1.7rem;
   }
-#qube {
-  font-size: 1.5rem;
+
+  #qube {
+    font-size: 1.5rem;
+    height: 5em;
+  }
+
+  .new-keyboard {
+    font-size: 1.7rem;
+  }
+
+  .fifth-row img {
+    width: 30%;
+  }
+
+  .tip {
+    display: block;
+    position: fixed;
+    width: 100%;
+    inset: auto auto 10px 0;
+    z-index: 1;
+  }
 }
+
+@media (min-width: 768px) {
+  .fifth-row img {
+    width: 20%;
+  }
 }
 
 /* JS Classes */

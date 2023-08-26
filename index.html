@@ -13,13 +13,13 @@
     <h1>Meitei Mayek Editor</h1>
     <p class="meitei">ꯃꯩꯇꯩ ꯃꯌꯦꯛ ꯏꯗꯤꯇꯔ</p>
 
-    <div class="eyek">
+    <section class="eyek">
         <form name="Eyek">
             <textarea class="meitei" id="qube" onkeyup="transcrire()" name="eeyekeditor" rows="8"></textarea>
         </form>
-    </div>
+    </section>
 
-    <div class="keyboard meitei unselectable">
+    <section class="keyboard meitei unselectable">
         <div class="new-keyboard">
             <div class="first-row row">
                 <div id="one" class="lowerCase"></div>
@@ -126,7 +126,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="tip">
+        <p>Press 'F2' to hide the keyboard and 'F4' to show the keyboard</p>
+    </section>
 
     <script type="text/javascript">
 
@@ -257,8 +261,6 @@
             }
         }
     </script>
-    <!-- JQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
 
