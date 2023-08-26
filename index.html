@@ -11,8 +11,6 @@
 
 <body>
     <h1>Meitei Mayek Editor</h1>
-    <p class="meitei">ꯃꯩꯇꯩ ꯃꯌꯦꯛ ꯏꯗꯤꯇꯔ</p>
-
     <section class="eyek">
         <form name="Eyek">
             <textarea class="meitei" id="qube" onkeyup="transcrire()" name="eeyekeditor" rows="8"></textarea>
@@ -22,108 +20,353 @@
     <section class="keyboard meitei unselectable">
         <div class="new-keyboard">
             <div class="first-row row">
-                <div id="one" class="lowerCase">
-                    
+                <div id="one" class="lowercase">
+                    <div class="english">1</div>
+                    <div class="manipuri">꯱</div>
                 </div>
-                <div id="two" class="lowerCase"></div>
-                <div id="three" class="lowerCase"></div>
-                <div id="four" class="lowerCase"></div>
-                <div id="five" class="lowerCase"></div>
-                <div id="six" class="lowerCase"></div>
-                <div id="seven" class="lowerCase"></div>
-                <div id="eight" class="lowerCase"></div>
-                <div id="nine" class="lowerCase"></div>
-                <div id="zero" class="lowerCase"></div>
-                <div id="hyphen" class="lowerCase"></div>
-                <div id="exclam" class="upperCase hide"></div>
-                <div id="at-the-rate" class="upperCase hide"></div>
-                <div id="hash" class="upperCase hide"></div>
-                <div id="dollar" class="upperCase hide"></div>
-                <div id="percentage" class="upperCase hide"></div>
-                <div id="up-sign" class="upperCase hide"></div>
-                <div id="and" class="upperCase hide"></div>
-                <div id="star" class="upperCase hide"></div>
-                <div id="lbracket" class="upperCase hide"></div>
-                <div id="rbracket" class="upperCase hide"></div>
-                <div id="underscore" class="upperCase hide"></div>
+                <div id="two" class="lowercase">
+                    <div class="english">2</div>
+                    <div class="manipuri">꯲</div>
+                </div>
+                <div id="three" class="lowercase">
+                    <div class="english">3</div>
+                    <div class="manipuri">꯳</div>
+                </div>
+                <div id="four" class="lowercase">
+                    <div class="english">4</div>
+                    <div class="manipuri">꯴</div>
+                </div>
+                <div id="five" class="lowercase">
+                    <div class="english">5</div>
+                    <div class="manipuri">꯵</div>
+                </div>
+                <div id="six" class="lowercase">
+                    <div class="english">6</div>
+                    <div class="manipuri">꯶</div>
+                </div>
+                <div id="seven" class="lowercase">
+                    <div class="english">7</div>
+                    <div class="manipuri">꯷</div>
+                </div>
+                <div id="eight" class="lowercase">
+                    <div class="english">8</div>
+                    <div class="manipuri">꯸</div>
+                </div>
+                <div id="nine" class="lowercase">
+                    <div class="english">9</div>
+                    <div class="manipuri">꯱</div>
+                </div>
+                <div id="zero" class="lowercase">
+                    <div class="english">0</div>
+                    <div class="manipuri">꯰</div>
+                </div>
+                <div id="hyphen" class="lowercase">
+                    <div class="english">-</div>
+                    <div class="manipuri">-</div>
+                </div>
+                <div id="exclam" class="uppercase hide">
+                    <div class="english">!</div>
+                    <div class="manipuri">!</div>
+                </div>
+                <div id="at-the-rate" class="uppercase hide">
+                    <div class="english">@</div>
+                    <div class="manipuri">@</div>
+                </div>
+                <div id="hash" class="uppercase hide">
+                    <div class="english">#</div>
+                    <div class="manipuri">#</div>
+                </div>
+                <div id="dollar" class="uppercase hide">
+                    <div class="english">$</div>
+                    <div class="manipuri">$</div>
+                </div>
+                <div id="percentage" class="uppercase hide">
+                    <div class="english">%</div>
+                    <div class="manipuri">%</div>
+                </div>
+                <div id="up-sign" class="uppercase hide">
+                    <div class="english">^</div>
+                    <div class="manipuri">^</div>
+                </div>
+                <div id="and" class="uppercase hide">
+                    <div class="english">&</div>
+                    <div class="manipuri">&</div>
+                </div>
+                <div id="star" class="uppercase hide">
+                    <div class="english">*</div>
+                    <div class="manipuri">*</div>
+                </div>
+                <div id="lbracket" class="uppercase hide">
+                    <div class="english">&lbbrk;</div>
+                    <div class="manipuri">&lbbrk;</div>
+                </div>
+                <div id="rbracket" class="uppercase hide">
+                    <div class="english">&rbbrk;</div>
+                    <div class="manipuri">&rbbrk;</div>
+                </div>
+                <div id="underscore" class="uppercase hide">
+                    <div class="english">_</div>
+                    <div class="manipuri">_</div>
+                </div>
             </div>
             <div class="second-row row">
-                <div id="q" class="lowerCase"></div>
-                <div id="w" class="lowerCase"></div>
-                <div id="e" class="lowerCase"></div>
-                <div id="r" class="lowerCase"></div>
-                <div id="t" class="lowerCase"></div>
-                <div id="y" class="lowerCase"></div>
-                <div id="u" class="lowerCase"></div>
-                <div id="i" class="lowerCase""></div>
-                <div id="o" class="lowerCase"></div>
-                <div id="p" class="lowerCase"></div>
-                <div id="bslash" class="lowerCase"></div>
-                <div id="Q" class="upperCase hide"></div>
-                <div id="W" class="upperCase hide"></div>
-                <div id="E" class="upperCase hide"></div>
-                <div id="R" class="upperCase hide"></div>
-                <div id="T" class="upperCase hide"></div>
-                <div id="Y" class="upperCase hide"></div>
-                <div id="U" class="upperCase hide"></div>
-                <div id="I" class="upperCase hide"></div>
-                <div id="O" class="upperCase hide"></div>
-                <div id="P" class="upperCase hide"></div>
-                <div id="pipe" class="upperCase hide"></div>
+                <div id="q" class="lowercase">
+                    <div class="english">q</div>
+                    <div class="manipuri">ꯪ</div>
+                </div>
+                <div id="w" class="lowercase">
+                    <div class="english">w</div>
+                    <div class="manipuri">ꯋ</div>
+                </div>
+                <div id="e" class="lowercase">
+                    <div class="english">e</div>
+                    <div class="manipuri">ꯦ</div>
+                </div>
+                <div id="r" class="lowercase">
+                    <div class="english">r</div>
+                    <div class="manipuri">ꯔ</div>
+                </div>
+                <div id="t" class="lowercase">
+                    <div class="english">t</div>
+                    <div class="manipuri">ꯇ</div>
+                </div>
+                <div id="y" class="lowercase">
+                    <div class="english">y</div>
+                    <div class="manipuri">ꯌ</div>
+                </div>
+                <div id="u" class="lowercase">
+                    <div class="english">u</div>
+                    <div class="manipuri">ꯨ</div>
+                </div>
+                <div id="i" class="lowercase"">
+                <div class="english">i</div>
+                    <div class="manipuri">ꯤ</div>
+                </div>
+                <div id="o" class="lowercase">
+                    <div class="english">o</div>
+                    <div class="manipuri">ꯣ</div>
+                </div>
+                <div id="p" class="lowercase">
+                    <div class="english">p</div>
+                    <div class="manipuri">ꯄ</div>
+                </div>
+                <div id="bslash" class="lowercase">
+                    <div class="english">\</div>
+                    <div class="manipuri">\\</div>
+                </div>
+                <div id="Q" class="uppercase hide">
+                    <div class="english">Q</div>
+                    <div class="manipuri">ꯈ</div>
+                </div>
+                <div id="W" class="uppercase hide">
+                    <div class="english"></div>
+                    <div class="manipuri"></div>
+                </div>
+                <div id="E" class="uppercase hide">
+                    <div class="english">E</div>
+                    <div class="manipuri">ꯦ</div>
+                </div>
+                <div id="R" class="uppercase hide">
+                    <div class="english"></div>
+                    <div class="manipuri"></div>
+                </div>
+                <div id="T" class="uppercase hide">
+                    <div class="english">T</div>
+                    <div class="manipuri">ꯠ</div>
+                </div>
+                <div id="Y" class="uppercase hide">
+                    <div class="english"></div>
+                    <div class="manipuri"></div>
+                </div>
+                <div id="U" class="uppercase hide">
+                    <div class="english">U</div>
+                    <div class="manipuri">ꯎ</div>
+                </div>
+                <div id="I" class="uppercase hide">
+                    <div class="english">I</div>
+                    <div class="manipuri">ꯏ</div>
+                </div>
+                <div id="O" class="uppercase hide">
+                    <div class="english">O</div>
+                    <div class="manipuri">ꯧ</div>
+                </div>
+                <div id="P" class="uppercase hide">
+                    <div class="english">P</div>
+                    <div class="manipuri">ꯞ</div>
+                </div>
+                <div id="pipe" class="uppercase hide">
+                    <div class="english">|</div>
+                    <div class="manipuri">꯫</div>
+                </div>
             </div>
             <div class="third-row row">
-                <div id="a" class="lowerCase"></div>
-                <div id="s" class="lowerCase"></div>
-                <div id="d" class="lowerCase"></div>
-                <div id="f" class="lowerCase"></div>
-                <div id="g" class="lowerCase"></div>
-                <div id="h" class="lowerCase"></div>
-                <div id="j" class="lowerCase"></div>
-                <div id="k" class="lowerCase"></div>
-                <div id="l" class="lowerCase"></div>
-                <div id="A" class="upperCase hide"></div>
-                <div id="S" class="upperCase hide"></div>
-                <div id="D" class="upperCase hide"></div>
-                <div id="F" class="upperCase hide"></div>
-                <div id="G" class="upperCase hide"></div>
-                <div id="H" class="upperCase hide"></div>
-                <div id="J" class="upperCase hide"></div>
-                <div id="K" class="upperCase hide"></div>
-                <div id="L" class="upperCase hide"></div>
+                <div id="a" class="lowercase">
+                    <div class="english">a</div>
+                    <div class="manipuri">ꯥ</div>
+                </div>
+                <div id="s" class="lowercase">
+                    <div class="english">s</div>
+                    <div class="manipuri">ꯁ</div>
+                </div>
+                <div id="d" class="lowercase">
+                    <div class="english">d</div>
+                    <div class="manipuri">ꯗ</div>
+                </div>
+                <div id="f" class="lowercase">
+                    <div class="english">f</div>
+                    <div class="manipuri">ꯐ</div>
+                </div>
+                <div id="g" class="lowercase">
+                    <div class="english">g</div>
+                    <div class="manipuri">ꯒ</div>
+                </div>
+                <div id="h" class="lowercase">
+                    <div class="english">h</div>
+                    <div class="manipuri">ꯍ</div>
+                </div>
+                <div id="j" class="lowercase">
+                    <div class="english">j</div>
+                    <div class="manipuri">ꯖ</div>
+                </div>
+                <div id="k" class="lowercase">
+                    <div class="english">k</div>
+                    <div class="manipuri">ꯀ</div>
+                </div>
+                <div id="l" class="lowercase">
+                    <div class="english">l</div>
+                    <div class="manipuri">ꯂ</div>
+                </div>
+                <div id="A" class="uppercase hide">
+                    <div class="english">A</div>
+                    <div class="manipuri">ꯑ</div>
+                </div>
+                <div id="S" class="uppercase hide">
+                    <div class="english"></div>
+                    <div class="manipuri"></div>
+                </div>
+                <div id="D" class="uppercase hide">
+                    <div class="english">D</div>
+                    <div class="manipuri">ꯘ</div>
+                </div>
+                <div id="F" class="uppercase hide">
+                    <div class="english"></div>
+                    <div class="manipuri"></div>
+                </div>
+                <div id="G" class="uppercase hide">
+                    <div class="english"></div>
+                    <div class="manipuri"></div>
+                </div>
+                <div id="H" class="uppercase hide">
+                    <div class="english">H</div>
+                    <div class="manipuri">ꯍ</div>
+                </div>
+                <div id="J" class="uppercase hide">
+                    <div class="english">J</div>
+                    <div class="manipuri">ꯘ</div>
+                </div>
+                <div id="K" class="uppercase hide">
+                    <div class="english">K</div>
+                    <div class="manipuri">ꯛ</div>
+                </div>
+                <div id="L" class="uppercase hide">
+                    <div class="english">L</div>
+                    <div class="manipuri">ꯜ</div>
+                </div>
             </div>
             <div class="fourth-row row">
-                <div id="z" class="lowerCase"></div>
-                <div id="x" class="lowerCase"></div>
-                <div id="c" class="lowerCase"></div>
-                <div id="v" class="lowerCase"></div>
-                <div id="b" class="lowerCase"></div>
-                <div id="n" class="lowerCase"></div>
-                <div id="m" class="lowerCase"></div>
-                <div id="comma" class="lowerCase"></div>
-                <div id="full-stop" class="lowerCase"></div>
-                <div id="slash" class="lowerCase"></div>
-                <div id="Z" class="upperCase hide"></div>
-                <div id="X" class="upperCase hide"></div>
-                <div id="C" class="upperCase hide"></div>
-                <div id="V" class="upperCase hide"></div>
-                <div id="B" class="upperCase hide"></div>
-                <div id="N" class="upperCase hide"></div>
-                <div id="M" class="upperCase hide"></div>
-                <div id="langle" class="upperCase hide"></div>
-                <div id="rangle" class="upperCase hide"></div>
-                <div id="question" class="upperCase hide"></div>
+                <div id="z" class="lowercase">
+                    <div class="english">z</div>
+                    <div class="manipuri">ꯉ</div>
+                </div>
+                <div id="x" class="lowercase">
+                    <div class="english">x</div>
+                    <div class="manipuri">ꯊ</div>
+                </div>
+                <div id="c" class="lowercase">
+                    <div class="english">c</div>
+                    <div class="manipuri">ꯆ</div>
+                </div>
+                <div id="v" class="lowercase">
+                    <div class="english">v</div>
+                    <div class="manipuri">ꯚ</div>
+                </div>
+                <div id="b" class="lowercase">
+                    <div class="english">b</div>
+                    <div class="manipuri">ꯕ</div>
+                </div>
+                <div id="n" class="lowercase">
+                    <div class="english">n</div>
+                    <div class="manipuri">ꯅ</div>
+                </div>
+                <div id="m" class="lowercase">
+                    <div class="english">m</div>
+                    <div class="manipuri">ꯃ</div>
+                </div>
+                <div id="comma" class="lowercase">
+                    <div class="english">,</div>
+                    <div class="manipuri">,</div>
+                </div>
+                <div id="full-stop" class="lowercase">
+                    <div class="english">.</div>
+                    <div class="manipuri">.</div>
+                </div>
+                <div id="slash" class="lowercase">
+                    <div class="english">/</div>
+                    <div class="manipuri">/</div>
+                </div>
+                <div id="Z" class="uppercase hide">
+                    <div class="english">Z</div>
+                    <div class="manipuri">ꯡ</div>
+                </div>
+                <div id="X" class="uppercase hide">
+                    <div class="english"></div>
+                    <div class="manipuri"></div>
+                </div>
+                <div id="C" class="uppercase hide">
+                    <div class="english"></div>
+                    <div class="manipuri"></div>
+                </div>
+                <div id="V" class="uppercase hide">
+                    <div class="english"></div>
+                    <div class="manipuri"></div>
+                </div>
+                <div id="B" class="uppercase hide">
+                    <div class="english"></div>
+                    <div class="manipuri"></div>
+                </div>
+                <div id="N" class="uppercase hide">
+                    <div class="english">N</div>
+                    <div class="manipuri">ꯟ</div>
+                </div>
+                <div id="M" class="uppercase hide">
+                    <div class="english">M</div>
+                    <div class="manipuri">ꯝ</div>
+                </div>
+                <div id="langle" class="uppercase hide">
+                    <div class="english">&lt;</div>
+                    <div class="manipuri">&lt;</div>
+                </div>
+                <div id="rangle" class="uppercase hide">
+                    <div class="english">&gt;</div>
+                    <div class="manipuri">&gt;</div>
+                </div>
+                <div id="question" class="uppercase hide">
+                    <div class="english">?</div>
+                    <div class="manipuri">?</div>
+                </div>
             </div>
             <div class="fifth-row row">
-                <div id="shift">
-                    <img src="./images/shift.png" alt="Shift key">
+                <div id="shift" class="utilities">
+                    <img src="./images/shift.png" alt="Shift key" class="shift-image">
+                    <img src="./images/unshift.png" alt="Unshift key" class="unshift-image hide">
                 </div>
-                <div id="backspace">
+                <div id="backspace" class="utilities">
                     <img src="./images/backspace.png" alt="Backspace key">
                 </div>
-                <div id="spacebar">
+                <div id="spacebar" class="utilities">
                     <img src="./images/space.png" alt="Spacebar key">
                 </div>
-                <div id="enter">
+                <div id="enter" class="utilities">
                     <img src="./images/enter.png" alt="Enter key">
                 </div>
             </div>

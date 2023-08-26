@@ -66,7 +66,7 @@ p {
 .eyek {
   width: calc(100% - 40px);
   margin: 3rem auto 1rem;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .meitei {
@@ -92,7 +92,7 @@ p {
   transform: translateY(0);
   transition: transform ease 2s;
   z-index: 2;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -104,12 +104,11 @@ p {
   background-color: #fefefe;
   width: calc(100% - 40px);
   margin: 1rem auto;
-  padding: 0.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   gap: 0.3em;
-  font-size: 1.3rem;
 }
 
 .row {
@@ -119,24 +118,22 @@ p {
 }
 
 .second-row {
-  margin: 0 0.2rem;
+  margin: 0 0.3rem;
 }
 
 .third-row {
-  margin: 0 0.4rem;
-}
-
-.fourth-row {
   margin: 0 0.6rem;
 }
 
-.fifth-row {
-  margin: 0 0.8rem;
-  display: flex;
-  justify-content: space-around;
+.fourth-row {
+  margin: 0 0.9rem;
 }
 
-.row div {
+.fifth-row {
+  margin: 0 1.2rem;
+}
+
+.row .lowercase, .row .uppercase, .row .utilities {
   width: 100px;
   height: 40px;
   display: flex;
@@ -148,8 +145,16 @@ p {
   transition: all ease 0.3s;
 }
 
+.english {
+  display: none;
+}
+
+.manipuri {
+  font-size: 1.3rem;
+}
+
 .fifth-row div {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .fifth-row img {
@@ -165,7 +170,7 @@ p {
   flex-grow: 2
 }
 
-.row div:active {
+.row .lowercase:active, .row .uppercase:active, .row .utilities:active {
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -181,7 +186,7 @@ p {
 
 @media (min-width: 375px) {
   .fifth-row img {
-      width: 60%;
+      width: 50%;
     }
   }
 
@@ -197,40 +202,93 @@ p {
     margin: 1rem auto;
   }
 
-  p {
-    font-size: 1.7rem;
-  }
-
   #qube {
     font-size: 1.5rem;
-    height: 5em;
+    height: 8em;
   }
-
-  .new-keyboard {
-    font-size: 1.7rem;
-  }
+  
+ .manipuri {
+  font-size: 1.5rem;
+ }
 
   .fifth-row img {
     width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .manipuri {
+    font-size: 1.8rem;
+  }
+
+  .fifth-row img {
+    width: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  #qube {
+    height: 5em;
   }
 
   .tip {
     display: block;
     position: fixed;
     width: 100%;
-    inset: auto auto 10px 0;
+    inset: auto auto 0 0;
     z-index: 1;
   }
 }
 
-@media (min-width: 768px) {
-  .fifth-row img {
-    width: 20%;
-  }
-}
-
 @media (min-width: 1200px) {
+  h1 {
+    margin: 0.5rem auto;
+  }
+
+  .eyek {
+    margin: 0.5rem auto;
+  }
+
+  .row .lowercase, .row .uppercase{
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .second-row {
+    margin: 0 1.5rem;
+  }
   
+  .third-row {
+    margin: 0 3rem;
+  }
+  
+  .fourth-row {
+    margin: 0 4.5rem;
+  }
+  
+  .fifth-row {
+    margin: 0 6rem;
+  }
+
+  .fifth-row div {
+    padding: 1rem;
+  }
+
+  .english {
+    display: block;
+    grid-row: 1/3;
+    font-size: 2rem;
+    align-self: start;
+  }
+
+  .manipuri {
+    grid-row: 2/3;
+    font-size: 1.5rem;
+  }
 }
 
 /* JS Classes */

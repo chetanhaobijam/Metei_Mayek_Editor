@@ -1,8 +1,8 @@
 const keyboard = document.querySelector(".keyboard");
 const qube = document.querySelector("#qube");
 const tip = document.querySelector(".tip");
-const lowerCaseLetters = document.querySelectorAll(".lowerCase");
-const upperCaseLetters = document.querySelectorAll(".upperCase");
+const lowerCaseLetters = document.querySelectorAll(".lowercase");
+const upperCaseLetters = document.querySelectorAll(".uppercase");
 const form = document.querySelector("form");
 // New Keys
 const one = document.querySelector("#one");
@@ -84,6 +84,8 @@ const shift = document.querySelector("#shift");
 const backspace = document.querySelector("#backspace");
 const spacebar = document.querySelector("#spacebar");
 const enter = document.querySelector("#enter");
+const shiftImage = document.querySelector(".shift-image");
+const unshiftImage = document.querySelector(".unshift-image");
 
 // Letters Object
 const letters = {
@@ -167,96 +169,12 @@ const letters = {
 window.addEventListener("keydown", (e) => {
   if(e.key === "F2") {
     keyboard.classList.add("bottom-animation");
-    qube.style.height = "15em";
+    qube.style.height = "18em";
   } else if(e.key === "F4") {
     keyboard.classList.remove("bottom-animation");
     qube.style.height = "5em";
   }
 })
-
-// Function to change to lower case letters
-const lowerCase = () => {
-  // 1st row
-  one.innerText = letters.one;
-  two.innerText = letters.two;
-  three.innerText = letters.three
-  four.innerText = letters.four;
-  five.innerText = letters.five;
-  six.innerText = letters.six;
-  seven.innerText = letters.seven;
-  eight.innerText = letters.eight;
-  nine.innerText = letters.nine;
-  zero.innerText = letters.zero;
-  hyphen.innerText = letters.hyphen;
-  exclam.innerText = letters.exclam;
-  atTheRate.innerText = letters.atTheRate;
-  hash.innerText = letters.hash;
-  dollar.innerText = letters.dollar;
-  percentage.innerText = letters.percentage;
-  upSign.innerText = letters.upSign;
-  and.innerText = letters.and;
-  star.innerText = letters.star;
-  lbracket.innerText = letters.lbracket;
-  rbracket.innerText = letters.rbracket;
-  underscore.innerText = "_";
-
-  // 2nd Row
-  q.innerText = letters.q;
-  w.innerText = letters.w;
-  e.innerText = letters.e;
-  r.innerText = letters.r;
-  t.innerText = letters.t;
-  y.innerText = letters.y;
-  u.innerText = letters.u;
-  i.innerText = letters.i;
-  o.innerText = letters.o;
-  p.innerText = letters.p;
-  bslash.innerText = letters.bslash;
-  Q.innerText = letters.Q;
-  E.innerText = letters.E;
-  T.innerText = letters.T;
-  U.innerText = letters.U;
-  I.innerText = letters.I;
-  O.innerText = letters.O;
-  P.innerText = letters.P;
-  pipe.innerText = letters.pipe;
-  
-  // 3rd Row
-  a.innerText = letters.a;
-  s.innerText = letters.s;
-  d.innerText = letters.d;
-  f.innerText = letters.f;
-  g.innerText = letters.g;
-  h.innerText = letters.h;
-  j.innerText = letters.j;
-  k.innerText = letters.k;
-  l.innerText = letters.l;
-  A.innerText = letters.A;
-  D.innerText = letters.D;
-  G.innerText = letters.G;
-  J.innerText = letters.J;
-  K.innerText = letters.K;
-  L.innerText = letters.L;
-
-  // 4th Row
-  z.innerText = letters.z;
-  x.innerText = letters.x;
-  c.innerText = letters.c;
-  v.innerText = letters.v;
-  b.innerText = letters.b;
-  n.innerText = letters.n;
-  m.innerText = letters.m;
-  comma.innerText = letters.comma;
-  fullStop.innerText = letters.fullStop;
-  slash.innerText = letters.slash;
-  Z.innerText = letters.Z;
-  N.innerText = letters.N;
-  M.innerText = letters.M;
-  langle.innerText = letters.langle;
-  rangle.innerText = letters.rangle;
-  question.innerText = letters.question;
-}
-lowerCase();
 
 // Shift Key Events
 window.addEventListener("keydown", (e) => {
@@ -288,6 +206,8 @@ shift.addEventListener("click", () => {
   upperCaseLetters.forEach(letter => {
     letter.classList.toggle("hide");
   })
+  shiftImage.classList.toggle("hide");
+  unshiftImage.classList.toggle("hide");
 })
 // KeyPress Events
 
